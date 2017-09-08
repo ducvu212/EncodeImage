@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppThemeMain"
+    tools:context="com.example.minhd.demoappimagelock.Main2Activity">
+
+    <LinearLayout
+        android:id="@+id/album"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="4dp"
+            android:background="#80CBC4"
+            android:scaleType="fitXY"
+            android:src="@drawable/album_cover_heart_88_dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Main Album"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/iv_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-50dp"
+                android:background="?attr/selectableItemBackground"/>
+
+            <ImageView
+                android:src="@drawable/menu"
+                android:layout_marginLeft="-50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        fab:fab_addButtonColorNormal="#03A9F4"
+        fab:fab_addButtonColorPressed="@color/white_pressed"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_colorNormal="#03A9F4"
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/add"
+            app:fabSize="mini"
+            fab:fab_colorNormal="#03A9F4"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_title="Add album" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/file"
+            fab:fab_colorNormal="#03A9F4"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_title="Import files" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/picture"
+            fab:fab_colorNormal="#03A9F4"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_title="Import photos" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_cam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/camera"
+            app:fab_type="normal"
+            fab:fab_colorNormal="#03A9F4"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_title="Take photo" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>
